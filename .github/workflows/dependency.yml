@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: First step in windows job  # - is for steps
         run: date
-      - run: ls -la
+      - run: ls
   dependent-job-1:
     needs: [job-on-ubuntu, job-on-windows]
     runs-on: macos-latest
